@@ -13,8 +13,5 @@
         <releaseNotes>
             * Initial release
         </releaseNotes>
-        <dependencies>
-            <dependency id="Obvs.MessageDispatcher" version="0.1.0-alpha" />
-        </dependencies>
     </metadata>
 </package>

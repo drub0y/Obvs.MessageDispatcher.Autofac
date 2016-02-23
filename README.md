@@ -7,7 +7,7 @@ of an `IMessageHandlerSelector` implementation which resolves instances of `IMes
 ##Basic configuration
 Configuration of this integration would look like this:
 
-```
+```C#
 // Configure and create an Obvs service bus instance
 var myObvsServiceBusConfiguration = ConfigureServiceBus();
 var serviceBus = myServiceBusConfiguration.CreateServiceBus();
@@ -26,12 +26,12 @@ dispatcherConfiguration.DispatchMessages();
 
 ##Autofac Integration Details
 
-###Extensions
+###Configuration Extensions
 
 This library also contains an extension method for Autofac's `ContainerBuilder` to help register any instances of `IMessageHandler<TMessage>
 ` found in any specified assemblies:
 
-```
+```C#
 var containerBuilder = new ContainerBuilder();
 
 containerBuilder.RegisterMessageHandlers(typeof(MyProgram).Assembly);
